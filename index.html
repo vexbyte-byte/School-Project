@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Executive Grooming Co.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="site-header">
+        <div class="logo">
+            <span class="shield-icon">🛡️</span> THE EXECUTIVE GROOMING CO.
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#team">Our Team</a>
+            <a href="#contact">Contact US</a>
+            <a href="#book" class="active">Book Now</a>
+            <a></a>
+        </nav>
+        <button class="btn-login" id="loginBtn">Login / Sign Up</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Precision Grooming For<br>The Modern Gentleman.</h1>
+            <h2>★ 4.9 Rating • Premium Pomades & Products • Complimentary Craft Beverages</h2>
+            <!--
+            <div class="booking-box">
+                <h3>Book Your Appointment</h3>
+                <div class="booking-inputs">
+                
+                    <select>
+                        <option>Select Service</option>
+                        <option>Classic Cut</option>
+                        <option>Executive Trim</option>
+                        <option>Beard Grooming</option>
+                        <option>Hot Towel Shave</option>
+                    </select>
+                    <select>
+                        <option>Choose Barber</option>
+                        <option>Alex</option>
+                        <option>David</option>
+                        <option>James</option>
+                    </select>
+                    <button class="btn-gold btn-ripple">Proceed</button>
+                </div>
+            -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="reveal">Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card reveal">
+                <h3>Classic Cut</h3>
+                <p>Precision haircut tailored to your style with a professional finish.</p>
+                <button class="btn-outline btn-ripple">Book Now</button>
+            </div>
+            <div class="service-card reveal">
+                <h3>Executive Trim</h3>
+                <p>Detailed maintenance haircut and cleanup for the busy professional.</p>
+                <button class="btn-outline btn-ripple">Book Now</button>
+            </div>
+            <div class="service-card reveal">
+                <h3>Beard Grooming</h3>
+                <p>Sculpting, trimming, and conditioning beard treatment with oils.</p>
+                <button class="btn-outline btn-ripple">Book Now</button>
+            </div>
+            <div class="service-card reveal">
+                <h3>Hot Towel Shave</h3>
+                <p>Traditional straight razor shave paired with soothing hot towels.</p>
+                <button class="btn-outline btn-ripple">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <h2 class="reveal">Meet Our Experts</h2>
+        <div class="team-grid">
+            <div class="team-member reveal">
+                <div class="member-img placeholder-david"></div>
+                <h3>David</h3>
+            </div>
+            <div class="team-member reveal">
+                <div class="member-img placeholder-alex"></div>
+                <h3>Alex</h3>
+            </div>
+            <div class="team-member reveal">
+                <div class="member-img placeholder-james"></div>
+                <h3>James</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-info reveal">
+            <div>
+                <h4>Address:</h4>
+                <p>124 High Street, London</p>
+            </div>
+            <div>
+                <h4>Hours:</h4>
+                <p>Mon-Sat: 9am - 7pm</p>
+            </div>
+            <div class="socials">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 The Executive Grooming Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="authOverlay">
+        <div class="auth-modal">
+            <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="signup">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form active" id="loginForm">
+                <h3>Welcome Back</h3>
+                <input type="email" placeholder="Email address" required>
+                <input type="password" placeholder="Password" required>
+                <div class="form-row">
+                    <label class="remember"><input type="checkbox"> Remember me</label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn-gold btn-ripple full-width">Login</button>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form class="auth-form" id="signupForm">
+                <h3>Create Account</h3>
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm password" required>
+                <button type="submit" class="btn-gold btn-ripple full-width">Sign Up</button>
+            </form>
+
+            <div class="auth-divider"><span>or</span></div>
+
+            <button class="btn-google" id="googleLoginBtn">
+                <i class="fa-brands fa-google"></i> Continue with Google
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</body>
+</html>

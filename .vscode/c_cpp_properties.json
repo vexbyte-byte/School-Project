@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/Wei Jie/AppData/Local/Projects/C++/microbit-samples/**"
+            ],
+            "defines": [
+                "MICROBIT_DAL_VERSION=1.5.0",
+                "YOTTA_CFG"
+            ],
+            "compilerPath": "C:/Windows/System32/cmd.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
